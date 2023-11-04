@@ -16,8 +16,8 @@ export default function Login() {
         .then(res => {
             console.log(res.user)
             // navigate(location?.state ? location?.state : "/")
-            // fetch(`http://localhost:5000/jwt`)
-            // axios.post(`http://localhost:5000/jwt` ,  user , {
+            // fetch(`https://car-doctor-server-ten-jade.vercel.app/jwt`)
+            // axios.post(`https://car-doctor-server-ten-jade.vercel.app/jwt` ,  user , {
             //     withCredentials : true
             // })
             // .then(res => {

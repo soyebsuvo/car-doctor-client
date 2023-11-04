@@ -4,7 +4,7 @@ import { AuthContext } from "../Components/AuthProvider/AuthProvider";
 import { useNavigate } from "react-router-dom";
 
 const axiosSecure = axios.create({
-    baseURL: 'http://localhost:5000',
+    baseURL: 'https://car-doctor-server-ten-jade.vercel.app',
     withCredentials: true
 })
 export default function useAxiosSecure() {

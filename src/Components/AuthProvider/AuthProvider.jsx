@@ -31,12 +31,12 @@ export default function AuthProvider({ children }) {
             setUser(currentUser);
             setLoading(false);
             if (currentUser) {
-                axios.post(`http://localhost:5000/jwt`, userInfo , {withCredentials : true})
+                axios.post(`https://car-doctor-server-ten-jade.vercel.app/jwt`, userInfo , {withCredentials : true})
                     .then(res => {
                         console.log(res.data);
                     })
             }else{
-                axios.post(`http://localhost:5000/logout` , userInfo , {
+                axios.post(`https://car-doctor-server-ten-jade.vercel.app/logout` , userInfo , {
                     withCredentials : true
                 })
                 .then(res => {

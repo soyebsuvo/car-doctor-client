@@ -22,7 +22,7 @@ export default function CheckOut() {
             message
         }
         console.log(order)
-        fetch("http://localhost:5000/bookings", {
+        fetch("https://car-doctor-server-ten-jade.vercel.app/bookings", {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

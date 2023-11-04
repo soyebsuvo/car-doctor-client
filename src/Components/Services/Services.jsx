@@ -4,7 +4,7 @@ import Service from "./Service";
 export default function Services() {
     const [services , setServices] = useState([]);
     useEffect(()=>{
-        fetch("http://localhost:5000/services")
+        fetch("https://car-doctor-server-ten-jade.vercel.app/services" , {credentials : 'include'})
         .then(res => res.json())
         .then(data => setServices(data))
     },[])

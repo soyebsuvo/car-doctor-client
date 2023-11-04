@@ -27,7 +27,7 @@ export default function Bookings() {
     const handleDelete = (id) => {
         const procsed = confirm("are you sure to delete this item");
         if (procsed) {
-            fetch(`http://localhost:5000/bookings/${id}`, {
+            fetch(`https://car-doctor-server-ten-jade.vercel.app/bookings/${id}`, {
                 method: "DELETE"
             })
                 .then(res => res.json())
@@ -44,7 +44,7 @@ export default function Bookings() {
 
     const handleBookingConfirm = (id) => {
         console.log(id)
-        fetch(`http://localhost:5000/bookings/${id}`, {
+        fetch(`https://car-doctor-server-ten-jade.vercel.app/bookings/${id}`, {
             method: "PATCH",
             headers: {
                 'content-type': 'application/json'
